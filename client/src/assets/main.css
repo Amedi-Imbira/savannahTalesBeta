@@ -10,11 +10,9 @@ a {
 }
 
 a:hover {
-      /* color: #414141; */
+      
       color: var(--vt-c-gray);
 }
-
-
 
 .cta-fill-normal {
       border: 2px solid var(--vt-c-green-hard);
@@ -25,4 +23,17 @@ a:hover {
 
 .cta-fill-normal:hover{
       background-color: #CEFDEA;
+      color: var(--vt-c-green-hard);
+}
+
+.cta-fill-large {
+      border: 2px solid var(--vt-c-green-hard);
+      padding: 10px 5rem;
+      color: var(--vt-c-green-hard);
+      border-radius: 5px;
+}
+
+.cta-fill-large:hover {
+      background-color: #CEFDEA;
+      color: var(--vt-c-green-hard);
 }

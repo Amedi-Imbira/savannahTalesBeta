@@ -17,6 +17,7 @@ nav {
       justify-content: space-between;
       align-items: center;
       padding: 15px 10rem;
+      border-bottom: 1px solid #E4E2E1;
 }
 ul li {
       display: inline-block;
