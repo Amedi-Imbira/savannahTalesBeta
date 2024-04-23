@@ -1,0 +1,28 @@
+@import './base.css';
+
+#app {
+      font-weight: normal;
+}
+
+a {
+      text-decoration: none;
+      color: var(--vt-c-black);
+}
+
+a:hover {
+      /* color: #414141; */
+      color: var(--vt-c-gray);
+}
+
+
+
+.cta-fill-normal {
+      border: 2px solid var(--vt-c-green-hard);
+      padding: 5px 2rem;
+      color: var(--vt-c-green-hard);
+      border-radius: 5px;
+}
+
+.cta-fill-normal:hover{
+      background-color: #CEFDEA;
+}
