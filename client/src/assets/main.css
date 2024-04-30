@@ -1,39 +1,35 @@
 @import './base.css';
 
 #app {
-      font-weight: normal;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
 }
 
-a {
-      text-decoration: none;
-      color: var(--vt-c-black);
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
 }
 
-a:hover {
-      
-      color: var(--vt-c-gray);
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
 }
 
-.cta-fill-normal {
-      border: 2px solid var(--vt-c-green-hard);
-      padding: 5px 2rem;
-      color: var(--vt-c-green-hard);
-      border-radius: 5px;
-}
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
 
-.cta-fill-normal:hover{
-      background-color: #CEFDEA;
-      color: var(--vt-c-green-hard);
-}
-
-.cta-fill-large {
-      border: 2px solid var(--vt-c-green-hard);
-      padding: 10px 5rem;
-      color: var(--vt-c-green-hard);
-      border-radius: 5px;
-}
-
-.cta-fill-large:hover {
-      background-color: #CEFDEA;
-      color: var(--vt-c-green-hard);
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
 }
