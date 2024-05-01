@@ -1,3 +1,13 @@
 <template>
-  <button class="button">Hello world</button>
+  <HomeView />
 </template>
+
+<script>
+import HomeView from '@/views/HomeView.vue'
+
+export default {
+  components: {
+    HomeView,
+  }
+}
+</script>
