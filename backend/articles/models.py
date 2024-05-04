@@ -5,14 +5,17 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 
 class Article(models.Model):
+      """
+      Defines the Article model
+      """
       
       class Status(models.TextChoices):
             PUBLISHED = 'PB', 'Published'
             DRAFT = 'DF', 'Drafted'
       
       id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-      title = models.CharField(max_length=200)
-      slug = models.SlugField(max_length=250)
+      title = models.CharField(max_length=200, unique=True)
+      slug = models.SlugField(max_length=250, unique=True)
       body = models.TextField()
       author = models.ForeignKey(User, on_delete=models.CASCADE)
       status = models.CharField(max_length=2, choices=Status.choices, default=Status.DRAFT)
