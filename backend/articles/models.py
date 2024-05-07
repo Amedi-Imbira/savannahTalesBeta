@@ -4,12 +4,17 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
 
+#TODO: WRITE TESTS FOR THE MODEL
+
 class Article(models.Model):
       """
       Defines the Article model
       """
       
       class Status(models.TextChoices):
+            """
+            Choices for the status of an article
+            """
             PUBLISHED = 'PB', 'Published'
             DRAFT = 'DF', 'Drafted'
       
