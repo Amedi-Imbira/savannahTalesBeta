@@ -16,7 +16,7 @@
                             <div class="field">
                                   <div class="control has-icons-left">
                                         <input type="text" class="input is-small" placeholder="Search">
-                                        <span class="icon is-left is-small">
+                                        <span class="icon is-left is-small has-text-primary">
                                               <font-awesome-icon icon="fa fa-search" />
                                         </span>
                                   </div>
@@ -24,7 +24,7 @@
                       </form>
                 </div>
                 <div class="navbar-end">
-                      <RouterLink to="kk" class="button is-primary">Create Post</RouterLink>
+                      <RouterLink to="kk" class="button is-primary is-outlined">Create Post</RouterLink>
                       <RouterLink to="/" class="navbar-item"><font-awesome-icon icon="fa fa-moon" /></RouterLink>
                       <RouterLink to="/" class="navbar-item"><font-awesome-icon icon="fa fa-bell" /></RouterLink>
                       <RouterLink to="/" class="navbar-item"><font-awesome-icon icon="fa fa-bookmark" /></RouterLink>
@@ -44,5 +44,5 @@
           
         </div>
       </nav>
-    </template>
+</template>
     

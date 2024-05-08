@@ -8,19 +8,20 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
-// Vue.prototype.$http = axios;
-
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
+
 /* import specific icons */
-import { faBell, faBookmark, faMoon, faSearch, faUserSecret, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faBell, faBookmark, faMoon, faSearch, faUserSecret, faPlus, faReply, faHeart, faComment, faEllipsis, faBookBookmark } from '@fortawesome/free-solid-svg-icons'
+import { faAddressBook } from '@fortawesome/free-regular-svg-icons'
+
 
 /* add icons to the library */
-library.add(faUserSecret, faSearch, faBookmark, faBell, faMoon, faPlus)
+library.add(faSearch, faBookmark, faBell, faMoon, faPlus, faReply, faHeart, faComment, faEllipsis, faAddressBook, faBookBookmark,)
 
 const app = createApp(App)
 
