@@ -1,13 +1,3 @@
 <template>
-  <UserFeedView />
+  <h1>hwllp</h1>
 </template>
-
-<script>
-import UserFeedView from '@/views/UserFeedView.vue'
-
-export default {
-  components: {
-    UserFeedView,
-  }
-}
-</script>
