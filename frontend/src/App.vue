@@ -1,3 +1,13 @@
 <template>
-  <h1>hwllp</h1>
+  <ListView />
 </template>
+
+<script>
+import ListView from './views/ListView.vue';
+
+export default {
+  components: {
+    ListView,
+  }
+}
+</script>
